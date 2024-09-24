@@ -1,4 +1,5 @@
 import React from 'react'
+import './TopicBox.css'
 
 export default function TopicBox() {
   return (
