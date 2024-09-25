@@ -1,7 +1,10 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
+import { Link, useNavigate } from 'react-router-dom'
+import { Button } from 'react-bootstrap';
 
 export default function About(){
+    const Navigate=useNavigate();
     return(
         <div>
             <h1>This is about page</h1>
@@ -31,7 +34,8 @@ export default function About(){
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
-  
+    <br></br>
+    <Button onClick={()=>Navigate("/")}>Back</Button>
         </div>
     )
 }
